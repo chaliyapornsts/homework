@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+  }
+
+.app{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.keyword-1{
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.header-1{
+    background-color: rgb(236, 236, 236);
+    height: 64px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+}
+
+.content-2{
+    background: white;
+    flex: 1;
+}
+
+.footer-3{
+    background-color: rgb(236, 236, 236);
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.search-2{
+    flex: 1;
+}
+
+.search-2, .button-3{
+    padding: 8px;
+}
+
+li{
+    list-style: none;
+}
+
+.nav{
+    background: #ec1c24;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.list{
+    display: flex;
+    gap: 10px;
+    height: 100%;
+    align-items: center;
+}
+
+.item{
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.item:hover{
+    background: #c90b11;
+}
+
+.nav-2 {
+    background: rgb(236, 236, 236);
+    display: flex;
+    align-items: baseline;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.box {
+    color: white;
+    width: 100 px;
+    background-color: #ec1c24;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 8px;
+    text-decoration: none;
+}
+
+.box:hover{
+    background: #c90b11;
+}
+
+.menu{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h4{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 30px;
+    line-height: 50px;
+    color: #dd343c;
+}
+
+.description{
+    margin: 50px;
+}
+
+@media (max-width: 640px){
+    .header{
+        justify-content: center;
+    }
+
+    .nav{
+        flex: 1;
+    }
+
+    .list{
+        justify-content: space-around;
+    }
+}
